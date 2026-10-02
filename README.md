@@ -43,6 +43,7 @@ Includes CI (php -l, node --check), shared design tokens, deployment docs.
 ## Contact
 
 - GitHub: [@M-Stoufa](https://github.com/M-Stoufa)
+- LinkedIn: [mustafa-boussen-0135b541a](https://linkedin.com/in/mustafa-boussen-0135b541a)
 - Email: boussenmostafa@gmail.com
 - Location: Tunisia
 - Status: open to internships
