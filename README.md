@@ -140,6 +140,7 @@ Node/Express staff application.
 - **Email** — [boussenmostafa@gmail.com](mailto:boussenmostafa@gmail.com)
 - **LinkedIn** — [mustafa-boussen](https://linkedin.com/in/mustafa-boussen-0135b541a)
 - **GitHub** — [@M-Stoufa](https://github.com/M-Stoufa)
+- **Discord** — `st0ufa_`
 - **Location** — Tunisia
 
 ---
