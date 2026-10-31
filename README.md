@@ -25,9 +25,11 @@ boundaries, and documentation that matches the code.
 
 ### 01 — Café Foundou · QR menu & owner dashboard
 
-<a href="https://cafefoundou.tn/">
-  <img src="./assets/foundou-menu.webp" alt="Café Foundou digital menu" width="100%">
-</a>
+<p align="center">
+  <a href="https://cafefoundou.tn/">
+    <img src="./assets/foundou-menu.webp" alt="Café Foundou mobile menu" width="340">
+  </a>
+</p>
 
 `React 19` `TypeScript` `Vite` `Supabase` `Vitest` `Playwright` · **[cafefoundou.tn](https://cafefoundou.tn/)**
 
@@ -52,7 +54,7 @@ mobile-first menu; the owner signs in to a private editor and changes go live on
 ### 02 — LÜMA · Italian kitchen website
 
 <a href="https://m-stoufa.github.io/LumaRestaurant/">
-  <img src="./assets/luma-site.webp" alt="LÜMA Italian Kitchen website" width="100%">
+  <img src="./assets/luma-site.webp" alt="LÜMA restaurant interior and atmosphere section" width="100%">
 </a>
 
 `HTML5` `CSS3` `JavaScript` · **[Live demo](https://m-stoufa.github.io/LumaRestaurant/)** · **[Repository](https://github.com/M-Stoufa/LumaRestaurant)**
@@ -71,7 +73,7 @@ restaurant's own photos, menu screenshots and confirmed business details.
 
 ### 03 — Salon de Thé Caramel · tea salon website
 
-<img src="./assets/caramel-site.webp" alt="Salon de Thé Caramel website" width="100%">
+<img src="./assets/caramel-site.webp" alt="Salon de Thé Caramel photo gallery section" width="100%">
 
 `HTML5` `CSS3` `JavaScript` `Python tooling` · *Private client build*
 
