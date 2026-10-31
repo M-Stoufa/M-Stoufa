@@ -27,7 +27,10 @@ boundaries, and documentation that matches the code.
 
 <p align="center">
   <a href="https://cafefoundou.tn/">
-    <img src="./assets/foundou-menu.webp" alt="Café Foundou mobile menu" width="340">
+    <img src="./assets/foundou-menu.webp" alt="Café Foundou mobile menu" width="320">
+  </a>
+  <a href="https://cafefoundou.tn/#/service">
+    <img src="./assets/foundou-admin.webp" alt="Café Foundou owner sign-in" width="320">
   </a>
 </p>
 
