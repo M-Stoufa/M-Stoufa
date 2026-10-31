@@ -1,53 +1,146 @@
-# Hi, I'm Stoufa 👋
+<div align="center">
 
-**Junior Full-Stack Developer / Student based in Tunisia**
-Building real-world web projects with JavaScript, PHP, HTML/CSS and Docker. Open to internships and junior roles.
+# Stoufa
 
-## What I do
+**Full-stack developer & student · Tunisia**
 
-- Frontend: responsive sites with HTML, CSS, JavaScript
-- Backend: PHP sites + Node.js / Express APIs
-- Integrations: Discord OAuth, MongoDB, REST APIs
-- Tools: Git, GitHub Actions (PHP lint + Node check), Docker
+I build web products for local businesses — fast, accessible sites for their customers,
+and the private tools their owners need to keep them current.
 
-## Featured projects
+[![Based in Tunisia](https://img.shields.io/badge/based%20in-Tunisia-b34a2c?style=flat-square)](#)
+[![Open to internships](https://img.shields.io/badge/open%20to-internships%20%26%20junior%20roles-2f6f4e?style=flat-square)](mailto:boussenmostafa@gmail.com?subject=Internship%20%2F%20junior%20role)
+[![Email](https://img.shields.io/badge/email-boussenmostafa%40gmail.com-211914?style=flat-square&logo=gmail&logoColor=white)](mailto:boussenmostafa@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mustafa--boussen-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/mustafa-boussen-0135b541a)
 
-### 1. Salon-Caramel — Tea salon website
-Static, fast, SEO-friendly site for Salon de Thé Caramel, El Kef (TN).
-French + Arabic UI, menu with prices, gallery, reservation page, Schema.org, OG images.
-
-**Stack:** HTML, CSS, JavaScript
-**Highlights:** responsive, Lighthouse-friendly, SEO meta + JSON-LD, Arabic/French typography
-
-→ https://github.com/M-Stoufa/Salon-Caramel
-
-### 2. WeMayCare-Network — Community platform
-PHP site (`whocares_cleaned/`) + separate Node staff-application app with Discord login and MongoDB.
-Includes CI (php -l, node --check), shared design tokens, deployment docs.
-
-**Stack:** PHP, JavaScript, Node.js/Express, MongoDB, Discord API, Docker, HTML/CSS
-**Highlights:** OAuth flow, CSRF/rate-limit handling, CI, multi-app repo
-
-→ https://github.com/M-Stoufa/WeMayCare-Network
-
-## Tech stack
-
-`JavaScript` `PHP` `Node.js` `HTML5` `CSS3` `MongoDB` `Docker` `Git` `GitHub Actions`
-
-## Currently
-
-- Learning: clean PHP architecture, Express best practices, Docker deploys
-- Focus: readable code, small PRs, docs that match code
-- Next: testing + TypeScript basics
-
-## Contact
-
-- GitHub: [@M-Stoufa](https://github.com/M-Stoufa)
-- LinkedIn: [mustafa-boussen-0135b541a](https://linkedin.com/in/mustafa-boussen-0135b541a)
-- Email: boussenmostafa@gmail.com
-- Location: Tunisia
-- Status: open to internships
+</div>
 
 ---
 
-*Pinned repos below have full READMEs with setup instructions.*
+I work mostly on small, real products rather than demos: restaurant and café sites,
+a QR menu with an owner dashboard, and a community platform with Discord auth. I care
+about the unglamorous parts — accurate content, keyboard access, sensible security
+boundaries, and documentation that matches the code.
+
+## Selected work
+
+### 01 — Café Foundou · QR menu & owner dashboard
+
+<a href="https://cafefoundou.tn/">
+  <img src="./assets/foundou-menu.webp" alt="Café Foundou digital menu" width="100%">
+</a>
+
+`React 19` `TypeScript` `Vite` `Supabase` `Vitest` `Playwright` · **[cafefoundou.tn](https://cafefoundou.tn/)**
+
+A QR menu for a café in Tunisia. Customers scan the code on the table and get a
+mobile-first menu; the owner signs in to a private editor and changes go live on their own.
+
+- **Public menu** — 8 categories and 28 published items. Prices are stored as integer
+  millimes and rendered as Tunisian dinars, with three supplied cake photographs and a
+  graceful fallback to the bundled menu if Supabase is unreachable.
+- **Owner space** — Supabase Auth with an `owners` allow-list, RLS on every table, and
+  security-definer RPCs for drafts and publishing. One shared draft, debounced autosave,
+  and automatic publishing — no separate "publish" button.
+- **Verification** — Vitest + Testing Library, axe-core with 0 violations across 16
+  route/width combinations, Playwright audits for contrast, tap targets and dialogs,
+  plus print-ready QR cards generated with Python.
+- **Delivery** — static SPA with hash routing, GitHub Actions builds, custom domain.
+
+*Client project — source is private; the live product is public.*
+
+---
+
+### 02 — LÜMA · Italian kitchen website
+
+<a href="https://m-stoufa.github.io/LumaRestaurant/">
+  <img src="./assets/luma-site.webp" alt="LÜMA Italian Kitchen website" width="100%">
+</a>
+
+`HTML5` `CSS3` `JavaScript` · **[Live demo](https://m-stoufa.github.io/LumaRestaurant/)** · **[Repository](https://github.com/M-Stoufa/LumaRestaurant)**
+
+A five-page site for LÜMA — Italian Kitchen & More in Le Kef, built only from the
+restaurant's own photos, menu screenshots and confirmed business details.
+
+- 217 menu entries across 23 categories with instant search and category filters.
+- A 13-photo full gallery in a keyboard-accessible lightbox; shared design system; no
+  stock or generated imagery.
+- Verified-content policy: no invented history, opening hours or ratings; `noindex`
+  while it remains a private demonstration.
+- No dependencies and no build step — just HTML, CSS and JavaScript.
+
+---
+
+### 03 — Salon de Thé Caramel · tea salon website
+
+<img src="./assets/caramel-site.webp" alt="Salon de Thé Caramel website" width="100%">
+
+`HTML5` `CSS3` `JavaScript` `Python tooling` · *Private client build*
+
+A five-page French site for a tea salon in Le Kef: home, story, menu, photo gallery
+and anniversary reservations.
+
+- 214 menu items across 8 categories, and a 52-photo gallery arranged in 21 staggered
+  scenes with thumbnails generated by a Python tool.
+- Reservation form posts to a configurable endpoint, with a pre-filled WhatsApp message
+  as the fallback when no endpoint is set.
+- Schema.org `CafeOrCoffeeShop` data, Open Graph metadata, PWA manifest, responsive WebP
+  images and a mobile-first layout.
+- Content stays close to the page so the owner can update prices without a CMS or build.
+
+---
+
+### 04 — WeMayCare Network · community platform
+
+`PHP` `MySQL` `Node.js` `Express 5` `MongoDB` `Discord API` `Docker` · *Private*
+
+Two connected apps for a gaming community: a public PHP/MySQL site and a separate
+Node/Express staff application.
+
+- **Public site** — accounts with Discord and Google OAuth, store and purchases,
+  complaints, and a password-protected reports view.
+- **Staff app** — Discord OAuth, application drafts and tracking, ticket-based
+  interviews, Discord.js staff notifications, and 10 Mongoose models.
+- **Hardening** — bcrypt, Helmet, rate limiting, server-side sessions, environment-only
+  secrets, an audit log, and Docker/Procfile deployment.
+- **CI** — GitHub Actions runs `php -l` on PHP (including embedded PHP in HTML) and
+  `node --check` on JavaScript; shared design tokens keep both apps consistent.
+
+## How I work
+
+- **Accessibility is part of "done"** — semantic HTML, keyboard paths, visible focus,
+  44 px tap targets, reduced-motion support and measured contrast, not an afterthought.
+- **Content gets verified** — menu prices, item counts and business details are checked
+  against the source material; I document provenance instead of filling gaps.
+- **Simple by default** — a static site when it can be static, no dependency unless it
+  earns its place, no backend when the browser is enough.
+- **Security on the server** — authentication and authorization live in Supabase RLS or
+  the API, never in a hidden route or disabled button.
+- **Docs that match reality** — setup steps, deployment notes, known limitations and
+  private-demo warnings are part of the deliverable.
+
+## Toolbox
+
+| | |
+| --- | --- |
+| **Languages** | TypeScript, JavaScript, PHP, HTML, CSS, SQL, Python (tooling) |
+| **Frontend** | React 19, Vite, Supabase JS, responsive CSS, WebP, accessible UI |
+| **Backend & data** | Node.js, Express 5, PHP/MySQL, MongoDB/Mongoose, Supabase Auth / RLS / RPC |
+| **Integrations** | Discord OAuth & bots, Google OAuth, REST APIs |
+| **Quality & delivery** | Vitest, Testing Library, Playwright, axe-core, ESLint, Stylelint, Prettier, GitHub Actions, Docker, Git |
+
+## Currently
+
+- Studying while taking on client work in parallel.
+- Going deeper into TypeScript, automated testing and clean backend architecture.
+- Open to internships and junior full-stack roles, on-site in Tunisia or remote.
+
+## Contact
+
+- **Email** — [boussenmostafa@gmail.com](mailto:boussenmostafa@gmail.com)
+- **LinkedIn** — [mustafa-boussen](https://linkedin.com/in/mustafa-boussen-0135b541a)
+- **GitHub** — [@M-Stoufa](https://github.com/M-Stoufa)
+- **Location** — Tunisia
+
+---
+
+<sub>Most client repositories are private, so some projects link to the live site only.
+Public repositories are linked where available.</sub>
