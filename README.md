@@ -78,7 +78,7 @@ restaurant's own photos, menu screenshots and confirmed business details.
 
 <img src="./assets/caramel-site.webp" alt="Salon de Thé Caramel photo gallery section" width="100%">
 
-`HTML5` `CSS3` `JavaScript` `Python tooling` · *Private client build*
+`HTML5` `CSS3` `JavaScript` `Python tooling` · **[Repository](https://github.com/M-Stoufa/salon-de-the-caramel)** · *Not deployed*
 
 A five-page French site for a tea salon in Le Kef: home, story, menu, photo gallery
 and anniversary reservations.
